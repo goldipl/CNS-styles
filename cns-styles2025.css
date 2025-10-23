@@ -576,6 +576,8 @@ table tr,
   }
   div#markowe div.img img {
     margin: 0;
+    width: 80%;
+    max-width: 200px;
   }
   #mainCol .form {
     margin: 16px;
@@ -607,8 +609,4 @@ table tr,
     font-size: 12px;
     margin: 4px 0;
   }
-}
-
-div#markowe div.img img {
-  width: 80%;
 }
