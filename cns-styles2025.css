@@ -610,3 +610,7 @@ table tr,
     margin: 4px 0;
   }
 }
+
+#mainCol div#markowe div.img img {
+  min-height: 140px;
+}
