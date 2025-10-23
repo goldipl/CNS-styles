@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* global */
 * {
   font-family: "Karla", sans-serif !important;
+  accent-color: #a2e644;
 }
 body {
   font-family: "Karla", sans-serif !important;
   background: #fff;
   overflow-x: clip;
+}
+
+/* header */
+.container:has(#topbar) {
+  margin-bottom: 16px;
 }
 ul#tools {
   position: relative;
@@ -25,7 +33,7 @@ ul#tools::before {
   top: 0;
   left: -50vw;
   width: 200vw;
-  height: 42px;
+  height: 100%;
   content: "";
   display: block;
   background: linear-gradient(to right, #a2e644, #517420);
@@ -118,4 +126,153 @@ ul#topMenu li a span {
 }
 ul#topMenu li:first-child a {
   padding: 0;
+}
+
+/* slider */
+.flexslider {
+  margin: 9px 0 25px 0;
+  border: 0;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04),
+    0px 1px 6px 0px rgba(0, 0, 0, 0.06), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* markowe lists */
+#mainCol #markowe section .row .firm article {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04),
+    0px 1px 6px 0px rgba(0, 0, 0, 0.06), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  box-sizing: border-box;
+}
+#mainCol #markowe .firm h2 {
+  border-bottom: 2px solid #517420;
+  font-weight: 700;
+}
+#mainCol #markowe .firm h2 a {
+  color: #517420;
+}
+#mainCol #markowe .firm h2 a:hover {
+  color: #000000;
+}
+#mainCol #markowe .firm li {
+  border-bottom: 1px solid #a2e644;
+}
+#mainCol #markowe .firm li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+#mainCol #markowe .firm li:last-of-type {
+  border-bottom: 0;
+}
+
+/* contact form */
+#mainCol .container:has(#contactform) h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+}
+#mainCol .container:has(#contactform) {
+  position: relative;
+  padding: 40px 0;
+  margin-top: 24px;
+}
+#mainCol .container:has(#contactform)::before {
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 200vw;
+  height: 100%;
+  content: "";
+  display: block;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 0;
+}
+#mainCol .container:has(#contactform) .form label {
+  color: #000;
+}
+#mainCol .form .contactSend {
+  max-width: 200px;
+  background-color: #74ad23;
+  border: 1px solid #74ad23;
+}
+#mainCol .form .contactSend:hover {
+  color: #74ad23;
+}
+@media (min-width: 768px) {
+  #mainCol .form .col-sm-offset-6 {
+    margin-left: 60%;
+  }
+}
+
+/* Clients carousel & Trust us section */
+.container:has(.jcarousel-skin-clients) {
+  position: relative;
+  padding: 40px 0;
+}
+.container:has(.jcarousel-skin-clients)::before {
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 200vw;
+  height: 100%;
+  content: "";
+  display: block;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 0;
+}
+#markoweProd h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: none;
+}
+.jcarousel-skin-clients {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* Footer */
+#footer {
+  background: #222;
+}
+#footer * {
+  color: #ffffff;
+}
+.footer-nav h3 {
+  font-weight: 700;
+  color: #74ad23;
+  text-decoration: underline;
+  text-decoration-color: #74ad23;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 16px;
+}
+#footer a:hover,
+.footer-nav ul li a:hover {
+  color: #74ad23 !important;
+  text-decoration: none;
+}
+
+/* product list */
+#mainCol .productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#mainCol .productList .shortProd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04),
+    0px 1px 6px 0px rgba(0, 0, 0, 0.06), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  margin: 0;
+  width: calc(25% - 8px);
+}
+#mainCol .productList .shortProd h2 {
+  border-bottom: 0;
 }
