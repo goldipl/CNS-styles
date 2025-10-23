@@ -1,0 +1,67 @@
+body {
+  background: #fff;
+  overflow-x: clip;
+}
+ul#tools {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #94c948;
+  padding: 15px 0;
+  gap: 10px;
+  z-index: 1;
+  min-height: 42px;
+}
+ul#tools::before {
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 200vw;
+  height: 42px;
+  content: "";
+  display: block;
+  background-color: #94c948;
+  z-index: -1;
+}
+ul#tools li {
+  margin: 0;
+}
+ul#tools li a {
+  color: #fff;
+  font-size: 12px;
+}
+ul#tools li a:hover {
+  color: #ec008c;
+  text-decoration: none;
+}
+a#logo {
+  margin: 8px 0;
+}
+a#logo img {
+  width: 140px;
+  height: auto;
+}
+div#searchBox {
+  padding: 0;
+}
+div#searchBox a {
+  padding: 0 12px 0 0;
+}
+div#contactBox a {
+  font-size: 14px;
+}
+div#contactBox .cart img {
+  width: 40px;
+  height: auto;
+}
+div#contactBox {
+  padding: 8px 0 0 0;
+}
+div#contactBox .col-left {
+  padding-top: 10px;
+}
+div#contactBox .col-right {
+  padding-left: 40px;
+}
