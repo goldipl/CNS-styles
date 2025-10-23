@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  font-family: "Karla", sans-serif !important;
+}
 body {
+  font-family: "Karla", sans-serif !important;
   background: #fff;
   overflow-x: clip;
 }
@@ -8,12 +13,13 @@ ul#tools {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #94c948;
+  background: linear-gradient(to right, #a2e644, #517420);
   padding: 15px 0;
   gap: 10px;
   z-index: 1;
   min-height: 42px;
 }
+ul#topMenu::before,
 ul#tools::before {
   position: absolute;
   top: 0;
@@ -22,32 +28,49 @@ ul#tools::before {
   height: 42px;
   content: "";
   display: block;
-  background-color: #94c948;
+  background: linear-gradient(to right, #a2e644, #517420);
   z-index: -1;
+}
+ul#tools::before {
+  height: 42.5px;
+}
+ul#topMenu::before {
+  height: 50px;
 }
 ul#tools li {
   margin: 0;
+  border-right: 1px solid #fff;
+  padding: 0 12px 0 2px;
 }
 ul#tools li a {
   color: #fff;
+  font-size: 10px;
+}
+ul#topMenu li a {
+  color: #fff;
   font-size: 12px;
 }
-ul#tools li a:hover {
-  color: #ec008c;
+ul#tools li a:hover,
+ul#topMenu li a:hover {
+  color: #000000;
   text-decoration: none;
 }
 a#logo {
-  margin: 8px 0;
+  margin: 13px 0;
 }
 a#logo img {
   width: 140px;
   height: auto;
 }
 div#searchBox {
-  padding: 0;
+  padding: 4px 0 0 0;
 }
 div#searchBox a {
   padding: 0 12px 0 0;
+  font-size: 11px;
+  background: url(../img/arrow.png) 100% 3px no-repeat;
+  background-size: 5px;
+  margin: 4px 4px 0 0;
 }
 div#contactBox a {
   font-size: 14px;
@@ -57,11 +80,42 @@ div#contactBox .cart img {
   height: auto;
 }
 div#contactBox {
-  padding: 8px 0 0 0;
+  float: unset;
+  padding: 20px 0 0 0;
 }
 div#contactBox .col-left {
   padding-top: 10px;
 }
 div#contactBox .col-right {
-  padding-left: 40px;
+  padding-left: 64px;
+}
+ul#topMenu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(to right, #a2e644, #517420);
+  margin: 0;
+  z-index: 1;
+}
+ul#topMenu li a:hover,
+ul#topMenu li.active a,
+ul#topMenu li a {
+  border-bottom: 0 !important;
+}
+ul#topMenu li a {
+  padding: 0;
+}
+ul#topMenu li {
+  padding: 15px 0;
+}
+ul#topMenu li.eko a:hover span,
+ul#topMenu li.eko.active a span,
+ul#topMenu li a span {
+  display: none !important;
+}
+ul#topMenu li:first-child a {
+  padding: 0;
 }
