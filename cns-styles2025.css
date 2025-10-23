@@ -148,6 +148,9 @@ ul#topMenu li:first-child a {
   padding: 16px;
   box-sizing: border-box;
 }
+#mainCol #markowe .firm {
+  min-height: 200px !important;
+}
 #mainCol #markowe .firm h2 {
   border-bottom: 2px solid #517420;
   font-weight: 700;
@@ -527,6 +530,12 @@ table tr,
     min-height: 360px;
     margin: 0 0 10px 0 !important;
   }
+  @media (max-width: 768px) {
+    #mainCol #products .prod,
+    #mainCol #products .prod article {
+      min-height: 360px;
+    }
+  }
   .footer-nav {
     padding: 16px;
   }
@@ -598,4 +607,8 @@ table tr,
     font-size: 12px;
     margin: 4px 0;
   }
+}
+
+div#markowe div.img img {
+  width: 80%;
 }
