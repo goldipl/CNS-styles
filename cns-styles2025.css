@@ -146,8 +146,13 @@ ul#topMenu li.active a {
 ul#topMenu li.eko a:hover,
 ul#topMenu li.eko.active a {
   color: #94c948 !important;
-  border: 1px solid #94c948 !important;
   border-bottom: 2px solid #94c948 !important;
+}
+@media (max-width: 767px) {
+  ul#topMenu li.eko a:hover,
+  ul#topMenu li.eko.active a {
+    border: 1px solid #94c948 !important;
+  }
 }
 .navbar-nav > li > a {
   color: #74ad23;
