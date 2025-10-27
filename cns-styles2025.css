@@ -2,6 +2,7 @@
 * {
   accent-color: #a2e644;
 }
+
 html,
 body {
   background: #fff;
@@ -14,20 +15,25 @@ body {
   margin-right: 0;
   margin-top: 8px;
 }
+
 .container:has(#topbar) {
   margin-bottom: 16px;
 }
+
 #topbar {
   height: 30px;
 }
+
 @media (max-width: 767px) {
   #topbar {
     height: 50px;
   }
+
   .navbar-collapse {
     background-color: #ffffff;
   }
 }
+
 ul#tools {
   position: relative;
   display: flex;
@@ -40,6 +46,7 @@ ul#tools {
   z-index: 1;
   min-height: 30px;
 }
+
 ul#tools::before {
   position: absolute;
   top: 0;
@@ -51,34 +58,42 @@ ul#tools::before {
   background: #222;
   z-index: -1;
 }
+
 ul#tools li {
   margin: 0;
   border-right: 1px solid #fff;
   padding: 0 12px 0 2px;
 }
+
 ul#tools li a {
   color: #fff;
   font-size: 10px;
 }
+
 ul#topMenu li a {
   color: #000000;
   font-size: 12px;
 }
+
 ul#tools li a:hover,
 ul#topMenu li a:hover {
   color: #00aeef;
   text-decoration: none;
 }
+
 a#logo {
   margin: 13px 0;
 }
+
 a#logo img {
   width: 140px;
   height: auto;
 }
+
 div#searchBox {
   padding: 4px 0 0 0;
 }
+
 div#searchBox a {
   padding: 0 12px 0 0;
   font-size: 11px;
@@ -86,23 +101,29 @@ div#searchBox a {
   background-size: 5px;
   margin: 4px 4px 0 0;
 }
+
 div#contactBox a {
   font-size: 14px;
 }
+
 div#contactBox .cart img {
   width: 40px;
   height: auto;
 }
+
 div#contactBox {
   float: unset;
   padding: 20px 0 0 0;
 }
+
 div#contactBox .col-left {
   padding-top: 10px;
 }
+
 div#contactBox .col-right {
   padding-left: 64px;
 }
+
 ul#topMenu {
   position: relative;
   display: flex;
@@ -113,6 +134,7 @@ ul#topMenu {
   margin: 0;
   z-index: 1;
 }
+
 ul#topMenu::before {
   position: absolute;
   top: 3px;
@@ -124,6 +146,7 @@ ul#topMenu::before {
   background: #f7f7f7;
   z-index: -1;
 }
+
 ul#topMenu li:first-child a,
 ul#topMenu li a,
 ul#topMenu li:last-child a {
@@ -131,6 +154,7 @@ ul#topMenu li:last-child a {
   line-height: 15px;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
+
 @media (max-width: 767px) {
   ul#topMenu li:first-child a,
   ul#topMenu li a,
@@ -138,29 +162,34 @@ ul#topMenu li:last-child a {
     padding: 6px;
   }
 }
+
 ul#topMenu li a:hover,
 ul#topMenu li.active a {
   border-bottom: 2px solid #ec018c;
   text-decoration: none;
   color: #ec018c;
 }
+
 ul#topMenu li.eko a:hover,
 ul#topMenu li.eko.active a {
   color: #94c948 !important;
   border-bottom: 2px solid #94c948 !important;
 }
+
 @media (max-width: 767px) {
   ul#topMenu li.eko a:hover,
   ul#topMenu li.eko.active a {
     border: 1px solid #94c948 !important;
   }
 }
+
 .navbar-nav > li > a {
   color: #74ad23;
   border-bottom: 1px solid #e1e1e1;
   font-size: 14px !important;
   margin: 4px 0;
 }
+
 .navbar-nav > li:last-of-type > a {
   border-bottom: 0;
 }
@@ -172,6 +201,7 @@ ul#topMenu li.eko.active a {
   padding: 0;
   margin: 0 auto;
 }
+
 .flexslider {
   margin: -16px 0 25px 0;
   border: 0;
@@ -189,15 +219,18 @@ ul#topMenu li.eko.active a {
   margin-bottom: 12px;
   min-height: 200px;
 }
+
 #mainCol div#markowe div.img img {
   margin-bottom: 0;
   height: 100px;
   width: auto;
 }
+
 #mainCol #markowe .firm {
   min-height: 200px !important;
   padding: 0 6px;
 }
+
 #mainCol #markowe .firm h2 {
   display: inline-flex;
   justify-content: flex-end;
@@ -209,22 +242,27 @@ ul#topMenu li.eko.active a {
   width: 100%;
   text-align: center;
 }
+
 #mainCol #markowe .firm h2 a {
   width: 100%;
   text-align: center;
   font-size: 13px !important;
   font-weight: 500;
 }
+
 #mainCol #markowe .firm h2 a:hover {
   color: #00aeef;
 }
+
 #mainCol #markowe .firm li {
   border-bottom: 1px solid #e1e1e1;
 }
+
 #mainCol #markowe .firm li a:hover {
   color: #000000;
   text-decoration: none;
 }
+
 #mainCol #markowe .firm li:last-of-type {
   border-bottom: 0;
 }
@@ -237,11 +275,13 @@ ul#topMenu li.eko.active a {
   font-size: 28px;
   z-index: 1;
 }
+
 #mainCol .container:has(#contactform) {
   position: relative;
   padding: 40px 0;
   margin-top: 24px;
 }
+
 #mainCol .container:has(#contactform)::before {
   position: absolute;
   top: 0;
@@ -255,20 +295,25 @@ ul#topMenu li.eko.active a {
   border-bottom: 1px solid #e1e1e1;
   z-index: 0;
 }
+
 #mainCol .container:has(#contactform) .form label {
   color: #000;
 }
+
 #mainCol .form .contactSend {
   max-width: 200px;
   background-color: #74ad23;
   border: 1px solid #74ad23;
 }
+
 #mainCol .form .contactSend:hover {
   color: #74ad23;
 }
+
 div#rodo2 input#contact_re {
   width: 120px;
 }
+
 @media (min-width: 768px) {
   #mainCol .form .col-sm-offset-6 {
     margin-left: 60%;
@@ -287,6 +332,7 @@ div#rodo2 input#contact_re {
   position: relative;
   padding: 40px 0;
 }
+
 .container:has(.jcarousel-skin-clients)::before {
   position: absolute;
   top: 0;
@@ -300,12 +346,14 @@ div#rodo2 input#contact_re {
   border-bottom: 1px solid #e1e1e1;
   z-index: 0;
 }
+
 #markoweProd h3 {
   text-align: center;
   font-weight: 600;
   font-size: 28px;
   text-transform: none;
 }
+
 .jcarousel-skin-clients {
   border-top: 0;
   border-bottom: 0;
@@ -315,9 +363,11 @@ div#rodo2 input#contact_re {
 #footer {
   background: #222;
 }
+
 #footer * {
   color: #ffffff;
 }
+
 .footer-nav h3 {
   font-weight: 700;
   color: #74ad23;
@@ -327,6 +377,7 @@ div#rodo2 input#contact_re {
   text-decoration-thickness: 2px;
   margin-bottom: 16px;
 }
+
 #footer a:hover,
 .footer-nav ul li a:hover {
   color: #74ad23 !important;
@@ -339,6 +390,7 @@ div#rodo2 input#contact_re {
   flex-wrap: wrap;
   gap: 8px;
 }
+
 #mainCol .productList .shortProd {
   display: flex;
   flex-direction: column;
@@ -350,25 +402,30 @@ div#rodo2 input#contact_re {
   margin: 0;
   width: calc(25% - 8px);
 }
+
 @media (max-width: 1000px) {
   #mainCol .productList .shortProd {
     width: 30%;
   }
 }
+
 @media (max-width: 620px) {
   #mainCol .productList .shortProd {
     width: 49%;
   }
 }
+
 @media (max-width: 466px) {
   #mainCol .productList .shortProd {
     width: 100%;
   }
 }
+
 #mainCol .productList .shortProd h2 {
   border-bottom: 0;
   text-align: center;
 }
+
 #mainCol .productList .shortProd h2 a {
   text-align: center;
   width: 100%;
@@ -378,6 +435,7 @@ div#rodo2 input#contact_re {
 a {
   color: #74ad23;
 }
+
 #rightCol #menu li.active a,
 #mainCol .form label,
 .spagination li.selected,
@@ -389,40 +447,50 @@ article div.info a img,
 #mainCol #product .calc th {
   color: #74ad23 !important;
 }
+
 #rightCol #menu li a:hover {
   color: #00aeef !important;
 }
+
 #rightCol #menu li.active a,
 #rightCol #menu li a:hover {
   background: url(../img/arrowsBlue.png) -10px 4px no-repeat;
   color: #00aeef;
 }
+
 #rightCol #menu li.active-submenu a {
   background: url(../img/arrowsBlue.png) 5px -16px no-repeat;
 }
+
 .btn-primary {
   background-color: #74ad23 !important;
 }
+
 #mainCol #product .calc td,
 #mainCol #product .calc th span {
   border-color: #f7f7f7;
 }
+
 .prod article a.more-button {
   color: #fff !important;
   border: 1px solid #74ad23;
 }
+
 .prod article a.more-button:hover {
   color: #74ad23 !important;
 }
+
 section#search-form div.one-last input {
   background-color: #74ad23;
   border-color: #74ad23;
   color: #ffffff;
 }
+
 section#search-form div.one-last input:hover {
   background-color: #ffffff;
   color: #74ad23;
 }
+
 .spagination-out a.showall {
   padding: 4px 6px;
   background-color: #74ad23;
@@ -430,11 +498,13 @@ section#search-form div.one-last input:hover {
   color: #ffffff;
   margin-top: -8px;
 }
+
 .spagination-out a.showall:hover {
   text-decoration: none;
   background-color: #ffffff;
   color: #74ad23;
 }
+
 #mainCol #products .prod article {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04),
     0px 1px 6px 0px rgba(0, 0, 0, 0.06), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
@@ -449,32 +519,40 @@ table tr,
   border-collapse: collapse;
   border-color: #e1e1e1 !important;
 }
+
 #mainCol #cart table th {
   background-color: #9e9e9e !important;
   padding: 0;
 }
+
 .data-table {
   margin-bottom: 10px;
 }
+
 #mainCol #cart table td {
   border-top: 0;
 }
+
 #cart table th,
 #cart table td,
 #cart table tr,
 #mainCol #cart table th {
   border-color: unset !important;
 }
+
 @media (max-width: 767px) {
   #mainCol #cart table th {
     padding: 0 8px !important;
   }
+
   #mainCol .buttons a.send {
     font-size: 11px !important;
   }
+
   form#shopcart {
     margin: 0 !important;
   }
+
   #mainCol #cart .text {
     width: 25px;
     font-size: 1.75em;
@@ -489,30 +567,37 @@ table tr,
   gap: 6px;
   margin: 6px 4px;
 }
+
 #mainCol #product .img .sub {
   margin: 0;
 }
+
 #mainCol #product .img .main img,
 #mainCol #product .img .sub img {
   border: 1px solid #e1e1e1;
   padding: 16px;
 }
+
 #mainCol #product .img .sub img {
   padding: 8px;
 }
+
 #mainCol #product .prodDesc .desc {
   padding-top: 16px;
   margin-top: 0;
   border-top: 1px solid #e1e1e1;
 }
+
 #mainCol a.noPrice {
   width: fit-content;
 }
+
 #mainCol #breadcrumb a,
 #mainCol #breadcrumb .selected {
   font-size: 12px;
   text-transform: none;
 }
+
 #mainCol #product .img .main img:hover,
 #mainCol #product .img .sub img:hover {
   opacity: 0.78;
@@ -522,22 +607,27 @@ table tr,
 #contactPage {
   margin: 0 16px;
 }
+
 #mainCol .container:has(#contactPage) {
   padding: 0;
   margin-top: 0;
 }
+
 #mainCol .container:has(#contactPage)::before {
   display: none;
 }
+
 #map p {
   margin: 16px;
 }
+
 @media (min-width: 768px) {
   #map:has(#contactform) {
     position: relative;
     padding: 40px 0;
     margin-top: 24px;
   }
+
   #map:has(#contactform)::before {
     position: absolute;
     top: 0;
@@ -559,53 +649,65 @@ table tr,
     height: 30px !important;
     width: auto;
   }
+
   div#topbar {
     padding-bottom: 0 !important;
   }
+
   .logo-mobile {
     margin: 11px 0 0 0 !important;
   }
+
   div#searchBox {
     position: relative;
     margin-top: 40px !important;
   }
+
   div#contactBox {
     position: relative;
     margin: 0 0 16px 0;
   }
+
   .col-xs-6:has(#searchBox),
   .col-xs-6:has(#searchBox) .col-xs-9,
   div#searchBox form input {
     width: 100% !important;
   }
+
   .col-xs-6:has(#searchBox) {
     margin-bottom: 16px;
   }
+
   div#searchBox button {
     position: relative;
     top: -36px;
     left: 460%;
     margin: 0 !important;
   }
+
   div#searchBox a {
     position: absolute;
     top: -28px;
     right: 16px;
   }
+
   div#contactBox .col-right {
     position: fixed;
     top: 79px;
     right: 16px;
     z-index: 1000;
   }
+
   div#contactBox .cart img {
     width: 32px;
     height: auto;
   }
+
   div#contactBox .col-left {
     position: relative;
     width: 100%;
   }
+
   div#contactBox a {
     position: absolute;
     top: -69px;
@@ -613,12 +715,14 @@ table tr,
     font-size: 12px !important;
     margin: 0 !important;
   }
+
   ul#topMenu {
     display: inline-block;
     margin-top: -58px;
     padding-top: 10px;
     margin-bottom: -10px;
   }
+
   ul#topMenu li a {
     display: flex;
     justify-content: center;
@@ -627,44 +731,55 @@ table tr,
     border: 1px solid rgb(187, 187, 187) !important;
     min-height: 49px;
   }
+
   #mainCol #breadcrumb {
     margin: 0 0 12px 0;
   }
+
   #mainCol #breadcrumb a {
     font-size: 12px;
   }
+
   #mainCol #products .intro {
     margin: 8px 16px 0 16px;
   }
+
   #mainCol #products h1 {
     margin-top: 10px;
     font-size: 26px;
     margin: 0 16px;
     margin-bottom: 0;
   }
+
   .row:has(#search-form) {
     margin-left: 0;
   }
+
   #mainCol #products {
     margin-left: -32px;
   }
+
   #mainCol #products .prod,
   #mainCol #products .prod article {
     height: auto !important;
     min-height: 360px;
     margin: 0 0 10px 0 !important;
   }
+
   #mainCol #products .prod {
     min-height: 320px;
   }
+
   #mainCol #products .prod .img a img {
     width: 100%;
     height: auto;
     margin-left: 10px;
   }
+
   .footer-nav {
     padding: 16px;
   }
+
   .spagination-out {
     display: flex;
     flex-direction: column;
@@ -672,19 +787,23 @@ table tr,
     align-items: center;
     text-align: center;
   }
+
   .spagination-out select.sorder,
   .spagination-out a.showall {
     position: relative;
     margin: 16px;
   }
+
   .spagination-out a.showall {
     display: flex;
     width: max-content;
     margin: 2px;
   }
+
   .col-xs-12:has(.spagination-out) {
     margin-left: 0;
   }
+
   ul#topMenu li a:hover,
   ul#topMenu li.active a {
     border: 1px solid #ec018c !important;
@@ -692,34 +811,42 @@ table tr,
     font-weight: bolder !important;
     box-sizing: border-box;
   }
+
   #mainCol #markowe .firm h2 a {
     font-size: 13px !important;
     margin-top: 10px !important;
   }
+
   #mainCol #markowe .firm li a {
     font-size: 12px !important;
     padding: 4px 0 2px 4px !important;
   }
+
   div#markowe div.img img {
     margin: 0;
     width: 80%;
     max-width: 200px;
   }
+
   #mainCol .form {
     margin: 16px;
   }
+
   #mainCol #product .img {
     float: left;
     width: 100%;
   }
+
   #mainCol #product .details ul.tab {
     display: flex;
     margin-top: 24px;
   }
+
   #mainCol #product .details {
     width: 100%;
     padding: 32px 0 24px 0;
   }
+
   #mainCol #product .prodDesc h1 {
     margin: 0;
     padding: 15px 0;
@@ -727,9 +854,11 @@ table tr,
     border-bottom: 1px solid#a2e644;
     margin-bottom: 12px;
   }
+
   #mainCol #product .prodDesc .price.tbold.tpink {
     font-size: 22px;
   }
+
   .footer-nav ul a {
     font-size: 12px;
     margin: 4px 0;
@@ -739,6 +868,7 @@ table tr,
 #mainCol div#markowe div.img img {
   width: 100%;
 }
+
 #mainCol .container:has(.flexslider) + #markowe .firm img {
   min-height: 140px;
   width: auto;
@@ -748,6 +878,7 @@ table tr,
   ul#topMenu li {
     margin: 0 0 2px 0;
   }
+
   #mainCol #search-form .form.form-validate {
     margin: 0;
   }
@@ -805,14 +936,17 @@ img.news-image {
   div#home-news ul li {
     width: calc(50% - 8px);
   }
+
   div.blog-list a.title,
   div.blog-list a.thumb img {
     width: 100%;
   }
+
   div.block a.img-right {
     float: unset;
     margin: 0;
   }
+
   div.block .caption:has(.img-right img) {
     text-align: center;
   }
@@ -827,13 +961,16 @@ div.block a.img-right img {
   #mainCol #products .row {
     margin: 0 -8px 0 -8px;
   }
+
   #mainCol #products #search-form + .col-xs-12,
   #mainCol #products .prod {
     padding: 0;
   }
+
   #mainCol #products .prod.col-md-3 {
     padding-right: 5px;
   }
+
   #mainCol #products .prod.col-md-3:nth-of-type(5n) {
     padding-right: 0;
   }
@@ -844,6 +981,7 @@ div.block a.img-right img {
     width: 100%;
     height: auto;
   }
+
   #promo article .promo img {
     width: 100% !important;
     height: auto;
