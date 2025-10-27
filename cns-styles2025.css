@@ -212,7 +212,7 @@ ul#topMenu li.eko.active a {
 #mainCol #markowe .firm h2 a {
   width: 100%;
   text-align: center;
-  font-size: 13px;
+  font-size: 13px !important;
   font-weight: 500;
 }
 #mainCol #markowe .firm h2 a:hover {
@@ -663,7 +663,7 @@ table tr,
     box-sizing: border-box;
   }
   #mainCol #markowe .firm h2 a {
-    font-size: 18px !important;
+    font-size: 13px !important;
     margin-top: 10px !important;
   }
   #mainCol #markowe .firm li a {
@@ -817,4 +817,9 @@ div.block a.img-right img {
     width: 100% !important;
     height: auto;
   }
+}
+
+div.shortProd div.img img {
+  width: 100%;
+  height: auto;
 }
