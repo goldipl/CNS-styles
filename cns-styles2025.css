@@ -441,10 +441,12 @@ section#search-form div.one-last input:hover {
 }
 
 /* Cart */
+table,
 table th,
 table td,
 table tr,
 #mainCol #cart table th {
+  border-collapse: collapse;
   border-color: #e1e1e1 !important;
 }
 #mainCol #cart table th {
@@ -453,6 +455,31 @@ table tr,
 }
 .data-table {
   margin-bottom: 10px;
+}
+#mainCol #cart table td {
+  border-top: 0;
+}
+#cart table th,
+#cart table td,
+#cart table tr,
+#mainCol #cart table th {
+  border-color: unset !important;
+}
+@media (max-width: 767px) {
+  #mainCol #cart table th {
+    padding: 0 8px !important;
+  }
+  #mainCol .buttons a.send {
+    font-size: 11px !important;
+  }
+  form#shopcart {
+    margin: 0 !important;
+  }
+  #mainCol #cart .text {
+    width: 25px;
+    font-size: 1.75em;
+    margin: 0 6px;
+  }
 }
 
 /* Product page */
@@ -627,10 +654,13 @@ table tr,
     min-height: 360px;
     margin: 0 0 10px 0 !important;
   }
-
-  #mainCol #products .prod,
-  #mainCol #products .prod article {
+  #mainCol #products .prod {
     min-height: 320px;
+  }
+  #mainCol #products .prod .img a img {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
   }
   .footer-nav {
     padding: 16px;
@@ -687,9 +717,8 @@ table tr,
     margin-top: 24px;
   }
   #mainCol #product .details {
-    overflow-x: scroll;
     width: 100%;
-    padding: 0 0 24px 0;
+    padding: 32px 0 24px 0;
   }
   #mainCol #product .prodDesc h1 {
     margin: 0;
@@ -762,6 +791,8 @@ img.news-image {
   justify-content: center;
   align-items: center;
   margin: 0 auto 24px;
+  width: 100%;
+  max-width: unset;
 }
 
 #page h1.blog-title {
@@ -822,4 +853,11 @@ div.block a.img-right img {
 div.shortProd div.img img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 767px) {
+  #mainCol #product .details td {
+    font-size: 12px;
+    padding: 4px !important;
+  }
 }
