@@ -567,9 +567,9 @@ table tr,
   }
   div#contactBox .col-right {
     position: fixed;
-    top: 10px;
-    left: 210px;
-    z-index: 9999;
+    top: 79px;
+    right: 16px;
+    z-index: 1000;
   }
   div#contactBox .cart img {
     width: 32px;
