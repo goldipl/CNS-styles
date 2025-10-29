@@ -994,8 +994,67 @@ div.shortProd div.img img {
 }
 
 @media (max-width: 767px) {
+  section#search-form {
+    margin-left: 16px;
+  }
   #mainCol #product .details td {
     font-size: 12px;
     padding: 4px !important;
+  }
+  #mainCol #products .row:has(.col-xs-3 #rightCol aside) {
+    display: flex;
+    flex-direction: column;
+  }
+  #mainCol #products .row:has(.col-xs-3 #rightCol aside) .col-xs-9,
+  #mainCol #products .row:has(.col-xs-3 #rightCol aside) .col-xs-3 {
+    width: 100%;
+  }
+  section#search-form div.one {
+    width: 33%;
+  }
+  #mainCol #products .prod .img a {
+    max-width: 100%;
+  }
+  #mainCol .productList .shortProd {
+    min-height: 220px;
+  }
+  #mainCol .productList .shortProd .img,
+  #mainCol .productList div.shortProd div.img img {
+    width: auto;
+    height: 100%;
+    max-height: 160px;
+  }
+  #mainCol #textPage {
+    margin: 16px;
+  }
+  #mainCol #textPage img,
+  #mainCol #textPage .col-xs-12 {
+    width: calc(100% - 32px);
+    height: auto;
+  }
+  #mainCol:has(#textPage) #breadcrumb {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  section#search-form div.one {
+    width: 45%;
+  }
+}
+
+@media (max-width: 330px) {
+  div#contactBox .col-right {
+    right: 15%;
+  }
+
+  div#searchBox {
+    margin-bottom: 24px;
+  }
+  #mainCol #products .prod {
+    width: 100%;
+  }
+  #mainCol #products .prod .img a img {
+    margin: 0;
   }
 }
